@@ -3,11 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <div class="sidebar">
+        <p>Photo by <a href="https://unsplash.com/@samuelegiglio">Samuele Giglio</a> on <a href="http://unsplash.com">Unsplash.com</a></p>
+        <div class="card-background">
+            <div class="card-content">
+                <span><img src="./img/odin-lined.png" alt="line art resembling Odin"></span>
+                <span>Lobotany</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="intro">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="italic">now</span> to get started.</p>
+                <p>You <span class="italic">know</span> you want to</p>
+        </div>
+        <div class="form-container">
+            <p>Let's do this!</p>
+            <form action="" method="post">
+                <div class="form-row-1">
+                    <div class="form-row">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+                <div class="form-row-2">
+                    <div class="form-row">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="form-row-3">
+                    <div class="form-row">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" id="pwd">
+                    </div>
+                    <div class="form-row">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" name="c-pwd" id="c-pwd">
+                    </div>
+                </div>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
