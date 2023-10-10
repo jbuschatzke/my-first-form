@@ -24,7 +24,7 @@
         </div>
         <div class="form-container">
             <p>Let's do this!</p>
-            <form action="" method="post">
+            <form action="" method="post" onSubmit="return checkPassword(this)">
                 <div class="form-row-1">
                     <div class="form-row">
                         <label for="first_name">First Name</label>
@@ -45,15 +45,17 @@
                         <input type="number" name="phone" id="phone" placeholder="5551234567">
                     </div>
                 </div>
-                <div class="form-row-3">
+                <div class="form-row-3" id="pwd-field">
                     <div class="form-row">
                         <label for="pwd">Password</label>
-                        <input type="password" name="pwd" id="pwd">
+                        <input type="password" name="password1" id="pwd">
                     </div>
                     <div class="form-row">
                         <label for="confirm">Confirm Password</label>
-                        <input type="password" name="c-pwd" id="c-pwd">
+                        <input type="password" name="password2" id="c-pwd">
                     </div>
+                </div>
+                <div id="error">
                 </div>
                 </div>
                 <div class="submit-btn">

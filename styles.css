@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "summer";
-    src: url("./fonts/simple-summer-webfont.woff"),
+    src: url("./fonts/simple_summer-webfont.woff"),
     url("./fonts/simple_summer-webfont.woff2");
 }
   
@@ -144,6 +144,12 @@
 .form-row label {
     margin-bottom: 8px;
     font-size: 14px;
+ }
+
+ #error {
+    font-size: 12px;
+    color: red;
+    margin-left: 32px;
  }
 
  button[type="submit"] {
