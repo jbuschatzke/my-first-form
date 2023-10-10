@@ -17,10 +17,26 @@ function checkPassword(form){
 let pwd = document.getElementById("pwd");
 let cPwd = document.getElementById("c-pwd");
 
-cPwd.addEventListener("keydown", () => {
+cPwd.addEventListener("keyup", () => {
     if (pwd.value != cPwd.value) {
         pwd.style.border = "1px solid red";
         cPwd.style.border = "1px solid red";
         document.getElementById("error").textContent = "* Your passwords do not match";
+    } else {
+        pwd.style.border = "1px solid #D6D9DC";
+        cPwd.style.border = "1px solid #D6D9DC";
+        document.getElementById("error").textContent = "";
+    }
+})
+
+pwd.addEventListener("keyup", () => {
+    if (pwd.value != cPwd.value) {
+        pwd.style.border = "1px solid red";
+        cPwd.style.border = "1px solid red";
+        document.getElementById("error").textContent = "* Your passwords do not match";
+    } else {
+        pwd.style.border = "1px solid #D6D9DC";
+        cPwd.style.border = "1px solid #D6D9DC";
+        document.getElementById("error").textContent = "";
     }
 })
