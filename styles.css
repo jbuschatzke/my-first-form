@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+@font-face {
+    font-family: "summer";
+    src: url("./fonts/simple-summer-webfont.woff"),
+    url("./fonts/simple_summer-webfont.woff2");
+}
   
   body {
     background-color: #EAEDF0;
@@ -23,6 +29,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    min-width: 200px;
+    max-width: 33vw;
+    min-height: 100vh;
+}
+
+.card-content span {
+    font-family: "summer";
 }
 
 .sidebar p {
@@ -42,7 +55,7 @@
     align-items: center;
     gap: 14px;
     height: 80px;
-    font-size: 32px;
+    font-size: 48px;
     color: white;
     text-align: center;
     margin-top: 200px;
@@ -54,16 +67,20 @@
 }
 
 .container{
-    height: 100vh;
-    width: 65vw;
-    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    max-height: 100vh;
+    font-size: 20px;
+    margin-top: 48px;
 }
 
 .intro{
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
-    width: 740px;
+    flex: 0;
+    max-width: 740px;
     margin-bottom: 16px;
 }
 
@@ -130,9 +147,9 @@
  }
 
  button[type="submit"] {
-    margin-left: 32px;
+    margin-left: 42px;
     margin-top: 16px;
-    padding: 8px 16px 8px 16px;
+    padding: 10px 24px 10px 24px;
     border-radius: 5px;
     border: 1px solid #315c3c;
     background-color: #315c3c;
@@ -145,9 +162,9 @@
  }
 
 .account {
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 12px;
-    margin-left: 32px;
+    margin-left: 42px;
 }
 
 .account > a {
