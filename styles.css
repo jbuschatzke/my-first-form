@@ -128,7 +128,7 @@
 .form-row input[type="text"],
 .form-row input[type="email"],
 .form-row input[type="password"],
-.form-row input[type="number"] {
+.form-row input[type="tel"] {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
@@ -139,6 +139,11 @@
 
 .form-row input:invalid{
     border: 1px solid red;
+}
+
+.form-row input:focus{
+    outline: none;
+    border: 1px solid #4cc5f5;
 }
 
 .form-row label {
